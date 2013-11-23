@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Code Hints</title>
+	<title>Fire</title>
 	<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.3.2.min.css">
 	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
 	<link rel="shortcut icon" href="favicon.ico">
@@ -11,12 +11,13 @@
 	<script src="_assets/js/index.js"></script>
 	<script src="js/jquery.mobile-1.3.2.min.js"></script>
     <script src="_assets/js/swipe.js"></script>
-    <style type="text/css">
+     <style type="text/css">
 
          /* Set the background image sources */
-                #fire { background-image: url(_assets/img/fire1.jpg); }
-                #fire1 { background-image: url(_assets/img/fire2.jpg); }
-                #fire2 { background-image: url(_assets/img/fire3.jpg); }
+                #yuta1 { background-image: url(_assets/img/landslide1.jpg); }
+                #yuta2 { background-image: url(_assets/img/landslide2.jpg); }
+                #yuta3 { background-image: url(_assets/img/landslide3.jpg); }
+               
                 /* Background settings */
                 .current-page {
                     background-size: cover;
@@ -50,9 +51,6 @@
                     user-select: none;
                 }
 
-    </style>
-    <style>
-
     .image{
         width:40%;
         height:150px;
@@ -65,32 +63,25 @@
         text-decoration:none; 
     }
 
-    .text{
-        color:#fff;
-        font-family:lovelo black;
-
-    }
 
     img{
         width:100%;
     }
 
 </style>
-    
-
 </head>
 <body>
 
-<div data-role="page" id="fire" class="current-page" data-dom-cache="true" data-theme="a" data-prev="fire2" data-next="fire1">
+<div data-role="page" id="yuta3" class="current-page" data-dom-cache="true" data-theme="a" data-prev="yuta2" data-next="yuta1">
     <!-- "city", "prevCity" and "nextCity" are used as placeholders and contain the name of the applicable city in our demo files. -->
     <div data-role="header" data-position="fixed" data-fullscreen="true" data-id="hdr" data-tap-toggle="false">
-        <h1>Fire</h1>
+        <h1>Volcanic Eruption</h1>
         <a href="index.html" data-direction="reverse" data-icon="delete" data-iconpos="notext" data-shadow="false" data-icon-shadow="false">Back</a>
     </div><!-- /header -->
     <div data-role="content">
-        <div id="trivia-fire" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="d">
+        <div id="trivia-yuta3" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="d">
             <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-            <p> The most effective way to protect yourself and your home from fire is to identify and remove fire hazards. 65 percent of house fire deaths occur in homes with no working smoke alarms. During a home fire, working smoke alarms and a fire escape plan that has been practiced regularly can save lives.</p>
+            <p>Explosive volcanoes blast hot solid and molten rock fragments and gases into the air. As a result, ashflows can occur on all sides of a volcano and ash can fall hundreds of miles downwind. Dangerous mudflows and floods can occur in valleys leading away from volcanoes. If you live near a known volcano, active or dormant, be prepared to follow volcano safety instructions from your local emergency officials.</p>
         </div><!-- /popup -->
     </div><!-- /content -->
     <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
@@ -98,7 +89,7 @@
             <a href="#" class="prev" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="d">Previous</a>
             <a href="#" class="next" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="d">Next</a>
         </div>
-        <a href="#trivia-fire" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">Hints</a>
+        <a href="#trivia-yuta3" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">Hints</a>
     </div><!-- /footer -->
 </div>
 

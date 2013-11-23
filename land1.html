@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Code Hints</title>
+	<title>Fire1</title>
 	<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.3.2.min.css">
 	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
 	<link rel="shortcut icon" href="favicon.ico">
@@ -11,12 +11,16 @@
 	<script src="_assets/js/index.js"></script>
 	<script src="js/jquery.mobile-1.3.2.min.js"></script>
     <script src="_assets/js/swipe.js"></script>
-    <style type="text/css">
+    <link rel="stylesheet" href="_assets/css/swipe.css">
+     <style type="text/css">
 
          /* Set the background image sources */
-                #fire { background-image: url(_assets/img/fire1.jpg); }
-                #fire1 { background-image: url(_assets/img/fire2.jpg); }
-                #fire2 { background-image: url(_assets/img/fire3.jpg); }
+                #pic1 { background-image: url(_assets/img/newyork.jpg); }
+                #pic2 { background-image: url(_assets/img/buenosaires.jpg); }
+                #pic3 { background-image: url(_assets/img/paris.jpg); }
+                #pic4 { background-image: url(_assets/img/capetown.jpg); }
+                #pic5 { background-image: url(_assets/img/seoul.jpg); }
+                #pic6 { background-image: url(_assets/img/sydney.jpg); }
                 /* Background settings */
                 .current-page {
                     background-size: cover;
@@ -50,9 +54,6 @@
                     user-select: none;
                 }
 
-    </style>
-    <style>
-
     .image{
         width:40%;
         height:150px;
@@ -72,33 +73,30 @@
     }
 
     img{
-        width:100%;
+        width:100%;w
     }
 
-</style>
-    
-
+</style>   
 </head>
 <body>
-
-<div data-role="page" id="fire" class="current-page" data-dom-cache="true" data-theme="a" data-prev="fire2" data-next="fire1">
-    <!-- "city", "prevCity" and "nextCity" are used as placeholders and contain the name of the applicable city in our demo files. -->
-    <div data-role="header" data-position="fixed" data-fullscreen="true" data-id="hdr" data-tap-toggle="false">
-        <h1>Fire</h1>
-        <a href="index.html" data-direction="reverse" data-icon="delete" data-iconpos="notext" data-shadow="false" data-icon-shadow="false">Back</a>
-    </div><!-- /header -->
-    <div data-role="content">
-        <div id="trivia-fire" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="d">
-            <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-            <p> The most effective way to protect yourself and your home from fire is to identify and remove fire hazards. 65 percent of house fire deaths occur in homes with no working smoke alarms. During a home fire, working smoke alarms and a fire escape plan that has been practiced regularly can save lives.</p>
-        </div><!-- /popup -->
+    
+    <div data-role="page" id="pic1" class="current-page" data-dom-cache="true" data-theme="a" data-prev="pic1" data-next="pic2">
+        <div data-role="header" data-position="fixed" data-fullscreen="true" data-id="hdr" data-tap-toggle="false">
+            <h1>land1</h1>
+            <a href="index.html" data-direction="reverse" data-icon="delete" data-iconpos="notext" data-shadow="false" data-icon-shadow="false">Back</a>
+        </div><!-- /header -->
+        <div data-role="content">
+            <div id="trivia-pic1" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="d">
+                <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <p>Fire 1 goes here.</p>
+            </div><!-- /popup -->
     </div><!-- /content -->
     <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
         <div data-role="controlgroup" class="control ui-btn-left" data-type="horizontal" data-mini="true">
             <a href="#" class="prev" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="d">Previous</a>
             <a href="#" class="next" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="d">Next</a>
         </div>
-        <a href="#trivia-fire" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">Hints</a>
+        <a href="#trivia-pic1" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">Hints</a>
     </div><!-- /footer -->
 </div>
 

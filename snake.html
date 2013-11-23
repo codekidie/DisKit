@@ -41,29 +41,20 @@
 <body>
 
 <div data-role="page">
-    <div data-role="panel" id="mypanel">
-        
-
-    <!-- panel content goes here -->
-    </div><!-- /panel -->
+  
         <div data-role="header" data-theme="d" data-id="foo1" data-position="fixed">
-            <a href="#mypanel" data-role="button" data-icon="bars" data-rel="close" data-iconpos="notext" data-theme="c" data-inline="true">Bars</a>
              <h1> DisKit</h1>
          </div>
 
 <div data-role="content">    
 
-           
-
-<ul data-role="listview" data-autodividers="true" data-filter-placeholder="Search Air Preparedness" data-filter="true" data-inset="true">
-    <li><a href="index.html">ACNE </a></li>
-    <li><a href="index.html">ALOPECIA AREATA </a></li>
-    <li><a href="index.html">Snake Bites</a></li>
-    <li><a href="index.html">Leptospirosis</a></li>
-    <li><a href="index.html">Diarrhea</a></li>
-    <li><a href="index.html">Pneumonia</a></li>
-    <li><a href="index.html">Hypothermia</a></li>    
-</ul>
+    <label for="select-choice-a" class="select">Custom select menu:</label>
+    <select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+        <option value="doctor">Call Doctor</option>
+        <option value="ambulance">Call Ambulance</option>
+        <option value="mommy">Call Mommy</option>
+    </select>
+    <input type="submit" name="submit" value="submit" data-theme="a">
 
 </div><!-- End Content -->
         

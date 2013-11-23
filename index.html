@@ -10,8 +10,10 @@
 	<script src="js/jquery.js"></script>
 	<script src="_assets/js/index.js"></script>
 	<script src="js/jquery.mobile-1.3.2.min.js"></script> 
-</head>
-<style>
+    <script src="_assets/js/swipe.js"></script>
+    <link rel="stylesheet" href="_assets/css/swipe.css">
+   
+    <style>
     .image{
         width:40%;
         height:150px;
@@ -35,41 +37,48 @@
     }
 
 </style>
+
+</head>
+
 <body>
 
 <div data-role="page">
-    <div data-role="panel" id="mypanel">
-		
+    <div data-role="panel" id="leftnav">
+
+		 <ul data-role="listview" data-filter="true" data-filter-placeholder="Help me I have" data-inset="true">
+            <li><a href="acne.html">ACNE </a></li>
+            <li><a href="alopecia.html">ALOPECIA AREATA </a></li>
+            <li><a href="snake.html" data-transition="flow">Snake Bites</a></li>
+            <li><a href="lepto.html">Leptospirosis</a></li>
+            <li><a href="diarrhea.html">Diarrhea</a></li>
+            <li><a href="pheneumonia.html">Pneumonia</a></li>
+            <li><a href="hypothermia.html">Hypothermia</a></li>  
+        </ul>
 
     <!-- panel content goes here -->
     </div><!-- /panel -->
     	<div data-role="header" data-theme="d" data-id="foo1" data-position="fixed">
-        <a href="#mypanel" data-role="button" data-icon="bars" data-rel="close" data-iconpos="notext" data-theme="c" data-inline="true">Bars</a>
+        <a href="#leftnav" data-role="button" data-icon="bars" data-rel="close" data-iconpos="notext" data-theme="c" data-inline="true">Bars</a>
     
-         <h1> Prepare Me</h1>  </div>
+         <h1>DisKit</h1>  </div>
 
 <div data-role="content">                
       <center>
         <div class="image"><a href="air.html" data-rel"dialog" data-close-btn="right" data-transition="flow"><img src="_assets/img/air.png"><span class="text">AIR</span></a></div>
-        <div class="image"><a href="air.html" data-rel"dialog" data-close-btn="right" data-transition="flow"><img src="_assets/img/water.png"><span class="text">WATER</span></a></div>
+        <div class="image"><a href="water.html" data-rel"dialog" data-close-btn="right" data-transition="flow"><img src="_assets/img/water.png"><span class="text">WATER</span></a></div>
       </center> 
         <span style="clear:both;"></span>
        <center> 
-        <div class="image"><a href="air.html" data-rel"dialog" data-close-btn="right" data-transition="flow"><img src="_assets/img/land.png"><span class="text">LAND</span></a></div>
+        <div class="image"><a href="yuta1.html" data-rel"dialog" data-close-btn="right" data-transition="flow"><img src="_assets/img/land.png"><span class="text">LAND</span></a></div>
         <div class="image"><a href="fire.html" data-rel"dialog" data-transition="flow"><img src="_assets/img/fire.png"><span class="text">FIRE</span></a></div>
        </center> 
 
 </div><!-- End Content -->
     	
 <div data-role="footer" data-id="foo1" data-position="fixed">
-	<div data-role="navbar">
-		<ul>
-			<li><a href="a.html">Land</a></li>
-			<li><a href="b.html">Water</a></li>
-			<li><a href="c.html">Fire</a></li>
-			<li><a href="d.html">Air</a></li>
-		</ul>
-	</div><!-- /navbar -->
+	<center>
+        <a href="index.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="flow" data-theme="a" data-inline="true">Home</a>
+    </center>
 </div><!-- /footer -->
 </div>
 
