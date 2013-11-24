@@ -1,18 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Code Hints</title>
-    <link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.3.2.min.css">
-    <link rel="stylesheet" href="_assets/css/jqm-demos.css">
-    <link rel="shortcut icon" href="favicon.ico">
-    <script src="js/jquery.js"></script>
-    <script src="_assets/js/index.js"></script>
-    <script src="js/jquery.mobile-1.3.2.min.js"></script> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fire</title>
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.3.2.min.css">
+	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script src="js/jquery.js"></script>
+	<script src="_assets/js/index.js"></script>
+	<script src="js/jquery.mobile-1.3.2.min.js"></script>
     <script src="_assets/js/swipe.js"></script>
-    <link rel="stylesheet" href="_assets/css/swipe.css">
-    <style>
+     <style type="text/css">
+
+         /* Set the background image sources */
+                    #water { background-image: url(_assets/img/storm_surge.jpg); }
+                    #water1 { background-image: url(_assets/img/tsunami.jpg); }
+                    #water2 { background-image: url(_assets/img/oilspill.jpg); }
+                .current-page {
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                }
+                /* Transparent footer */
+                .current-page .ui-footer {
+                    background: none;
+                    border: none;
+                    bottom: 0;
+                }
+                /* The footer won't have a height because there are only two absolute positioned elements in it.
+                So we position the buttons from the bottom. */
+                .control.ui-btn-left, .trivia-btn.ui-btn-right {
+                    top: auto;
+                    bottom: 7px;
+                    margin: 0;
+                }
+                /* Custom styling for the trivia source */
+                small {
+                    font-size: .75em;
+                    color: #666;
+                }
+                /* Prevent text selection while swiping with mouse */
+                .current-page .ui-header, .ui-title, .control .ui-btn, .trivia-btn {
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    -o-user-select: none;
+                    user-select: none;
+                }
 
     .image{
         width:40%;
@@ -40,38 +75,25 @@
 </head>
 <body>
 
-<div data-role="page">
-    <div data-role="panel" id="mypanel">
-        
-
-    <!-- panel content goes here -->
-    </div><!-- /panel -->
-        <div data-role="header" data-theme="d" data-id="foo1" data-position="fixed">
-            <a href="#mypanel" data-role="button" data-icon="bars" data-rel="close" data-iconpos="notext" data-theme="c" data-inline="true">Bars</a>
-             <h1> DisKit</h1>
-         </div>
-
-<div data-role="content">    
-
-           
-
-<ul data-role="listview" data-autodividers="true" data-filter-placeholder="Search Air Preparedness" data-filter="true" data-inset="true">
-    <li><a href="index.html">ACNE </a></li>
-    <li><a href="index.html">ALOPECIA AREATA </a></li>
-    <li><a href="index.html">Snake Bites</a></li>
-    <li><a href="index.html">Leptospirosis</a></li>
-    <li><a href="index.html">Diarrhea</a></li>
-    <li><a href="index.html">Pneumonia</a></li>
-    <li><a href="index.html">Hypothermia</a></li>    
-</ul>
-
-</div><!-- End Content -->
-        
-<div data-role="footer" data-id="foo1" data-position="fixed">
-    <center>
-        <a href="index.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="flow" data-theme="a" data-inline="true">Home</a>
-    </center>
-</div><!-- /footer -->
+<div data-role="page" id="water1" class="current-page" data-dom-cache="true" data-theme="a" data-prev="water" data-next="water2">
+    <!-- "city", "prevCity" and "nextCity" are used as placeholders and contain the name of the applicable city in our demo files. -->
+    <div data-role="header" data-position="fixed" data-fullscreen="true" data-id="hdr" data-tap-toggle="false">
+        <h1>Tsunami</h1>
+        <a href="index.html" data-direction="reverse" data-icon="delete" data-iconpos="notext" data-shadow="false" data-icon-shadow="false">Back</a>
+    </div><!-- /header -->
+    <div data-role="content">
+        <div id="trivia-water1" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="d">
+            <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+            <p>If there is a noticeable recession in the water away from the shoreline, this is considered "nature's tsunami warning" and you should move away immediately.</p>
+        </div><!-- /popup -->
+    </div><!-- /content -->
+    <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
+        <div data-role="controlgroup" class="control ui-btn-left" data-type="horizontal" data-mini="true">
+            <a href="#" class="prev" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="d">Previous</a>
+            <a href="#" class="next" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="d">Next</a>
+        </div>
+        <a href="#trivia-water1" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">Hints</a>
+    </div><!-- /footer -->
 </div>
 
 </body>

@@ -14,9 +14,9 @@
      <style type="text/css">
 
          /* Set the background image sources */
-                    #air { background-image: url(_assets/img/typhoon.jpg); }
-                    #air1 { background-image: url(_assets/img/hurricane.jpg); }
-                    
+                    #water { background-image: url(_assets/img/storm_surge.jpg); }
+                    #water1 { background-image: url(_assets/img/tsunami.jpg); }
+                    #water2 { background-image: url(_assets/img/oilspill.jpg); }
                 .current-page {
                     background-size: cover;
                     background-position: center center;
@@ -75,16 +75,16 @@
 </head>
 <body>
 
-<div data-role="page" id="air" class="current-page" data-dom-cache="true" data-theme="a" data-prev="air" data-next="air1">
+<div data-role="page" id="water2" class="current-page" data-dom-cache="true" data-theme="a" data-prev="water1" data-next="water">
     <!-- "city", "prevCity" and "nextCity" are used as placeholders and contain the name of the applicable city in our demo files. -->
     <div data-role="header" data-position="fixed" data-fullscreen="true" data-id="hdr" data-tap-toggle="false">
-        <h1>Typhoon</h1>
+        <h1>OIL SPILL</h1>
         <a href="index.html" data-direction="reverse" data-icon="delete" data-iconpos="notext" data-shadow="false" data-icon-shadow="false">Back</a>
     </div><!-- /header -->
     <div data-role="content">
-        <div id="trivia-air" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="d">
+        <div id="trivia-water2" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="d">
             <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-            <p>	If there is a noticeable recession in the water away from the shoreline, this is considered "nature's tsunami warning" and you should move away immediately..</p>
+            <p>If oil is close to the coastline, people may be able to smell the oil spill from the shore. This odor may cause irritation of the eyes, nose, throat and skin. People with asthma or other respiratory ailments may be more sensitive to the effects of inhaled fumes</p>
         </div><!-- /popup -->
     </div><!-- /content -->
     <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
@@ -92,7 +92,7 @@
             <a href="#" class="prev" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="d">Previous</a>
             <a href="#" class="next" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="d">Next</a>
         </div>
-        <a href="#trivia-air" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">Hints</a>
+        <a href="#trivia-water2" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">Hints</a>
     </div><!-- /footer -->
 </div>
 
